@@ -1,0 +1,42 @@
+@font-face {
+    font-family: Lora-Regular;
+    src: url("./fonts/Lora-Regular.ttf");
+  }
+
+body {
+    font-family: Lora-Regular;
+    font-size: 18px;
+    color: #ffffff;
+    background-image: url(./assets/background.svg);
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 40px;
+  }
+
+  nav {
+    background-color: #f05d5d;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
