@@ -1,16 +1,29 @@
 @font-face {
     font-family: Lora-Regular;
     src: url("./fonts/Lora-Regular.ttf");
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: Lora-Italic;
+    src: url("./fonts/Lora-Italic.ttf");
+    font-style: italic;
   }
 
 body {
     font-family: Lora-Regular;
     font-size: 18px;
+    line-height: 1.5;
     color: #ffffff;
     background-image: url(./assets/background.svg);
-    width: 640px;
+    background-attachment: fixed;
+    background-position: center top;
+    max-width: 640px;
     margin-left: auto;
     margin-right: auto;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 header {
@@ -20,23 +33,56 @@ header {
 
   nav {
     background-color: #f05d5d;
-    padding-left: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  
+    /* shorthand goes in order of a clockface */
+    padding: 20px 40px 20px 40px;
   }
 
-  a:link {
+  nav a {
+    color: white;
     text-decoration: none;
+    margin-right:  15px;
+  }
+
+  nav a:hover {
+    color: #5000ff;
+    border-bottom: 2px solid white;
+    padding-bottom: 1px;
   }
   
-  a:visited {
-    text-decoration: none;
+  section {
+    background-color: #5000ff;
+    padding: 40px;
   }
-  
-  a:hover {
-    text-decoration: none;
+
+  .image {
+    padding: 0;
   }
-  
-  a:active {
-    text-decoration: none;
+
+  h2 {
+    font-size: 36px;
+    line-height: 1.2;
+
   }
+
+  blockquote {
+    font-size: 36px;
+    font-family: Lora-Italic;
+    line-height: 1.2;
+    padding: 40px 0px 40px 0px;
+  }
+
+.map {
+  width: 100%;
+}
+
+.contact p {
+  margin-top: 20px;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid #f05d5d;
+  padding-bottom: 1px;
+}
